@@ -26,11 +26,11 @@
             <span class="logo-acent">Web</span>Studio
           </a>
 
-          <ul class="nav-list list">
+          <ul class="nav-list">
             <li class="nav-list-item">
               <a href="index.html" class="nav-list-link link">Студия</a>
             </li>
-            <li class="nav-list-item">
+            <li class="nav-list-item test">
               <a href="portfolio.html" class="nav-list-link link">Портфолио</a>
             </li>
             <li class="nav-list-item">
@@ -39,7 +39,7 @@
           </ul>
         </nav>
         <address class="address">
-          <ul class="address-list list">
+          <ul class="address-list">
             <li class="address-list-item">
               <a
                 href="mailto:info@devstudio.com"
@@ -75,7 +75,9 @@
             Эффективные решения<br />
             для вашего бизнеса
           </h1>
-          <button type="button" class="hero-button">Заказать услугу</button>
+          <button type="button" class="hero-button" data-modal-open>
+            Заказать услугу
+          </button>
         </div>
       </section>
 
@@ -474,5 +476,17 @@
         </ul>
       </div>
     </footer>
+
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="close-btn" data-modal-close>
+          <svg width="11" height="11">
+            <use href="./images/sprite.svg#icon-close2"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <script src="JS/modal.js"></script>
   </body>
 </html>
