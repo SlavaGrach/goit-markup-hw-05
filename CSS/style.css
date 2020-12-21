@@ -584,7 +584,8 @@ body {
   transition: background-color 250ms var(--cube);
 }
 
-.footer .social-link:hover {
+.footer .social-link:hover,
+.footer .social-link:focus {
   background-color: var(--acent-color);
 }
 
@@ -629,6 +630,8 @@ body {
 .filter-button:hover {
   color: var(--white-color);
   background-color: var(--acent-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .projects-list {
@@ -716,7 +719,8 @@ body {
   transform: translateY(100%);
 }
 
-.project-list-link:hover .portfolio-overlay {
+.project-list-link:hover .portfolio-overlay,
+.project-list-link:focus .portfolio-overlay {
   transform: translateY(0);
 }
 
